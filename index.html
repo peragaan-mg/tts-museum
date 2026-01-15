@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>TTS Edukasi Geologi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>TTS Edukasi Geologi</h1>
+  
+  <div class="input-area">
+    <label>Nama Pengunjung:</label>
+    <input type="text" id="nama" placeholder="Ketik nama Anda...">
+  </div>
+
+  <div class="container">
+    <div id="tts-grid" class="grid-container"></div>
+
+    <div class="clues">
+      <h3>Mendatar</h3>
+      <ul id="clues-across">
+        </ul>
+      
+      <h3>Menurun</h3>
+      <ul id="clues-down">
+        </ul>
+    </div>
+  </div>
+
+  <button onclick="cekJawaban()">Selesai & Klaim Sertifikat</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

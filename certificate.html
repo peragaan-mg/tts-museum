@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sertifikat Digital</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      border: 5px solid #333;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>SERTIFIKAT APRESIASI</h1>
+<p>Diberikan kepada:</p>
+<h2 id="nama"></h2>
+
+<p>Atas keberhasilannya menyelesaikan<br>
+Teka-Teki Silang Edukasi Museum</p>
+
+<button onclick="window.print()">Unduh Sertifikat</button>
+
+<script>
+  document.getElementById("nama").innerText =
+    localStorage.getItem("namaPengunjung");
+</script>
+
+</body>
+</html>
